@@ -149,9 +149,7 @@ char* encodemsg(struct message *msg,char * name)
  // printf("text len check 0x%04x\n",msg->text_len);
 	memcpy(encodemessage+bytes_written,msg->text,msg->text_len);
 
-	return encodemessage; 
-
-
+	return encodemessage;
 }
 
 struct  message* decodemsg(char* recvmsg)
